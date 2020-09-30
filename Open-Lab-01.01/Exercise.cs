@@ -6,7 +6,12 @@ namespace Open_Lab_01._01
     {
         public bool IsLessThan10(string input)
         {
-            // to fo nieco
+            int cislo = 0;
+            int.TryParse(input, out cislo);
+            if(cislo < 10)
+                return true;
+            else
+                return false;
         }
     }
 }
